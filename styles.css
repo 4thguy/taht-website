@@ -1,0 +1,33 @@
+.book-cover-top {
+    width: 100%;
+}
+
+.about-book .section-title {
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .book-cover-top {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-book .section-title {
+        text-align: left;
+    }
+    .about-book-section .about-book-cover {
+        max-width: 230px;
+    }
+    .about-creators img {
+        width: 100%;
+    }
+    .about-book > .about-book-section:nth-child(odd) .col-md:nth-child(1),
+    .about-creators > .about-creator:nth-child(even) .col-md-6:nth-child(1) {
+        order: 2;
+    }
+    .about-book > .about-book-section:nth-child(odd) .col-md:nth-child(2),
+    .about-creators > .about-creator:nth-child(even) .col-md-6:nth-child(2) {
+        order: 1;
+    }
+}
